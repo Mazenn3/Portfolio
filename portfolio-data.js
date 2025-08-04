@@ -261,33 +261,33 @@ projects: {
       mediaCaption: "🛒 Visualizations for smarter inventory"
     },
     {
-      name: "Loan Risk Predictor",
-      image: "images/loan_risk.jpg",
-      video: "videos/loan_risk_demo.mp4",
-      description: "AI-powered model offers instant, visual risk scoring for loan applications.",
+      name: "Emotion Detection System",
+      image: "images/Emotion Detection.png",
+      video: "images/streamlit-app1(Emotion_Detection).mp4",
+      description: "understands user text input in any language and detects emotions like Joy 😊, Anger 😠, or Fear 😨 using a fine-tuned NLP model.",
       details: [
         "Python & scikit-learn pipeline",
-        "Deployed with Flask for instant results",
-        "Achieved 87% test accuracy"
+        "Deployed with streamlit for instant results",
+        "Achieved 4% test accuracy"
       ],
-      link: "#",
+      link: "https://lnkd.in/eDfFwwyf",
       accentColor: "#F29E4C",
-      mediaCaption: "💡 Live app for smarter loan approvals"
+      mediaCaption: "💡 Live app Emotion Detection with Multilingual Support"
     },
-    {
-      name: "Survey Sentiment Analyzer",
-      image: "images/survey_sentiment.jpg",
-      video: "videos/survey_sentiment_demo.mp4",
-      description: "Analyze open-ended survey responses with NLP to reveal customer satisfaction and key themes.",
-      details: [
-        "NLP processing with Python",
-        "Word cloud and trend graphs",
-        "Deployed dashboard for real-time results"
-      ],
-      link: "#",
-      accentColor: "#31a24c",
-      mediaCaption: "📊 Real-time insights powered by NLP"
-    }
+    // {
+    //   name: "Survey Sentiment Analyzer",
+    //   image: "images/survey_sentiment.jpg",
+    //   video: "videos/survey_sentiment_demo.mp4",
+    //   description: "Analyze open-ended survey responses with NLP to reveal customer satisfaction and key themes.",
+    //   details: [
+    //     "NLP processing with Python",
+    //     "Word cloud and trend graphs",
+    //     "Deployed dashboard for real-time results"
+    //   ],
+    //   link: "#",
+    //   accentColor: "#31a24c",
+    //   mediaCaption: "📊 Real-time insights powered by NLP"
+    // }
   ]
 },
 certificates: {
