@@ -243,7 +243,8 @@ projects: {
         "Interactive Power BI dashboards",
         "Key insights for development"
       ],
-      link: "#",
+      link: "https://savanna.alxafrica.com/certificates/LEYR7hzM2m
+",
       accentColor: "#05A9C7",
       mediaCaption: "🌊 Dashboard with Power BI · Impact in East Africa"
     },
