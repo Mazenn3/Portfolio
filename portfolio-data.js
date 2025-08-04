@@ -243,8 +243,7 @@ projects: {
         "Interactive Power BI dashboards",
         "Key insights for development"
       ],
-      link: "https://savanna.alxafrica.com/certificates/LEYR7hzM2m
-",
+      link: "#",
       accentColor: "#05A9C7",
       mediaCaption: "🌊 Dashboard with Power BI · Impact in East Africa"
     },
@@ -300,7 +299,7 @@ certificates: {
       date: "March 2025",
       provider: "ALX",
       description: "In my 6-month program with ALX and ExploreAI Academy, I learned to tell clear business stories from complex data. I dove deep into the entire process—from analysis with SQL to visualization with Power BI—and I'm eager to put those skills to work.",
-      link: "https://your-verification-link.com" // Optional: external cert link
+      link: "https://savanna.alxafrica.com/certificates/LEYR7hzM2m" // Optional: external cert link
     },
     {
       image: "images/NTI_Adv_DA.jpg",
