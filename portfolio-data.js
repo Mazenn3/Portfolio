@@ -243,7 +243,7 @@ projects: {
         "Interactive Power BI dashboards",
         "Key insights for development"
       ],
-      link: "#",
+      link: "https://www.linkedin.com/posts/mazen-hasseb-9914122b0_dataanalytics-powerbi-excel-activity-7313621570063589376-Hvmn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAErP0_0BJp8OlByLcVIOzOi0XVx_zVj2Kak",
       accentColor: "#05A9C7",
       mediaCaption: "🌊 Dashboard with Power BI · Impact in East Africa"
     },
