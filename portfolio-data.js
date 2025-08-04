@@ -268,7 +268,7 @@ projects: {
       details: [
         "Python & scikit-learn pipeline",
         "Deployed with streamlit for instant results",
-        "Achieved 4% test accuracy"
+        "Achieved 84% test accuracy"
       ],
       link: "https://lnkd.in/eDfFwwyf",
       accentColor: "#F29E4C",
