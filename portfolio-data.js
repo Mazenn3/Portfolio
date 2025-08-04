@@ -250,7 +250,7 @@ projects: {
     {
       name: "Retail Sales Dashboard",
       image: "images/Food_Mart.jfif",
-      video: "videos/Food_Mart.mp4",
+      video: "images/NTI_PowerBI.mp4",
       description: "Interactive dashboards unveil trends and drive smarter retail decisions across regions.",
       details: [
         "Sales trend analysis",
