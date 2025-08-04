@@ -1,207 +1,334 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Offered Services</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Offered Services - Tabs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="services-tabs.css">
+<style>
 
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<style>
-  body {
-	min-height: 100vh;
-	background: linear-gradient(135deg, #e3f0ff 0%, #f8faff 100%);
-	font-family: 'Segoe UI', Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-  }
-  .services-section {
-	max-width: 900px;
-	margin: 48px auto;
-	background: rgba(255,255,255,0.85);
-	border-radius: 28px;
-	box-shadow: 0 12px 48px rgba(79,140,255,0.18), 0 2px 12px rgba(0,0,0,0.10);
-	padding: 48px 40px;
-	border: 1.5px solid #dbeafe;
-	backdrop-filter: blur(8px);
-	position: relative;
-	overflow: hidden;
-  }
-  .services-section::before {
-	content: "";
-	position: absolute;
-	top: -60px;
-	right: -60px;
-	width: 180px;
-	height: 180px;
-	background: radial-gradient(circle, #4f8cff33 0%, transparent 70%);
-	z-index: 0;
-	pointer-events: none;
-  }
-  .services-section h2 {
-	font-size: 2.6rem;
-	font-weight: 900;
-	margin-bottom: 28px;
-	background: linear-gradient(90deg, #4f8cff 0%, #2563eb 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
-	color: transparent;
-	letter-spacing: 1px;
-	z-index: 1;
-	text-align: left;
-  }
-  .services-section h3 {
-	color: #2563eb;
-	font-size: 1.6rem;
-	margin-bottom: 24px;
-	font-weight: 800;
-	letter-spacing: 0.7px;
-	display: flex;
-	align-items: center;
-	gap: 14px;
-	z-index: 1;
-  }
-  .service-card {
-	background: rgba(255,255,255,0.98);
-	border-radius: 18px;
-	box-shadow: 0 2px 16px rgba(79,140,255,0.10);
-	padding: 24px 22px;
-	margin-bottom: 24px;
-	border: 1px solid #dbeafe;
-	position: relative;
-	transition: box-shadow 0.2s, border-color 0.2s;
-  }
-  .service-card:hover {
-	box-shadow: 0 8px 32px rgba(79,140,255,0.18);
-	border-color: #4f8cff;
-  }
-  .service-title {
-	font-size: 1.25rem;
-	font-weight: 700;
-	color: #2563eb;
-	margin-bottom: 10px;
-	display: flex;
-	align-items: center;
-	gap: 10px;
-  }
-  .service-card ul {
-	margin-left: 18px;
-	margin-bottom: 0;
-  }
-  .service-card li {
-	font-size: 1.08rem;
-	margin-bottom: 7px;
-	color: #444;
-	line-height: 1.7;
-  }
-  .service-card .tools {
-	font-size: 1.05rem;
-	color: #4f8cff;
-	margin-top: 6px;
-	font-weight: 600;
-  }
-  .services-section hr {
-	border: none;
-	border-top: 1px solid #dbeafe;
-	margin: 18px 0;
-  }
-  @media (max-width: 700px) {
-	.services-section {
-	  padding: 18px 8px;
-	}
-	.services-section h2 {
-	  font-size: 1.45rem;
-	}
-	.services-section h3 {
-	  font-size: 1.1rem;
-	}
-	.service-card {
-	  padding: 12px 8px;
-	}
-	.service-title {
-	  font-size: 1.05rem;
-	}
-  }
-	</style>
-  </head>
-  <body>
-	<div class="services-section">
-  <header class='major'><h2>Offered Services</h2></header>
-  <h3>💼 Offered Services – Data Analyst</h3>
-  <div class="service-card">
-	<div class="service-title">🔍 <strong>1. Data Cleaning & Preparation</strong></div>
-	<ul>
-	  <li>Handle missing, duplicate, or incorrect data</li>
-	  <li>Format and standardize datasets for analysis</li>
-	  <li>Merge and transform multiple data sources</li>
-	</ul>
-	<div class="tools">🛠️ <strong>Tools:</strong> Excel, Python (Pandas), SQL, Power Query</div>
-  </div>
-  <div class="service-card">
-	<div class="service-title">📊 <strong>2. Data Analysis & Reporting</strong></div>
-	<ul>
-	  <li>Descriptive, diagnostic, predictive, and prescriptive analysis</li>
-	  <li>Identify trends, patterns, and anomalies</li>
-	  <li>Provide actionable insights for decision-making</li>
-	</ul>
-	<div class="tools">🛠️ <strong>Tools:</strong> Excel, Python, SQL, Power BI</div>
-  </div>
-  <div class="service-card">
-	<div class="service-title">📈 <strong>3. Dashboard & KPI Design</strong></div>
-	<ul>
-	  <li>Create interactive dashboards and reports</li>
-	  <li>Track key performance indicators (KPIs)</li>
-	  <li>Deliver visuals that support strategic decisions</li>
-	</ul>
-	<div class="tools">🛠️ <strong>Tools:</strong> Power BI, Excel, Tableau</div>
-  </div>
-  <div class="service-card">
-	<div class="service-title">📥 <strong>4. Excel Automation & Advanced Functions</strong></div>
-	<ul>
-	  <li>Create dynamic reports using formulas, PivotTables, slicers</li>
-	  <li>Build dashboards and charts</li>
-	  <li>Automate reports with macros or Power Query</li>
-	</ul>
-  </div>
-  <div class="service-card">
-	<div class="service-title">📂 <strong>5. Database Querying (SQL)</strong></div>
-	<ul>
-	  <li>Extract, filter, and summarize data from databases</li>
-	  <li>Write complex SQL queries and joins</li>
-	  <li>Optimize data extraction for performance</li>
-	</ul>
-  </div>
-  <div class="service-card">
-	<div class="service-title">📑 <strong>6. Business Insights & Recommendations</strong></div>
-	<ul>
-	  <li>Interpret analysis results in business context</li>
-	  <li>Provide summaries and suggestions to improve operations or sales</li>
-	  <li>Create summary reports or presentations</li>
-	</ul>
-  </div>
-  <div class="service-card">
-	<div class="service-title">📎 <strong>7. Custom Analysis Projects</strong></div>
-	<ul>
-	  <li>Market analysis</li>
-	  <li>Customer segmentation</li>
-	  <li>Sales trend reports</li>
-	  <li>Survey data insights</li>
-	  <li>Any custom data-related task tailored to your business</li>
-	</ul>
-  </div>
-	</div>
-  </body>
+body {
+  background: #151b30;
+  overflow: hidden;
+}
+.stars {
+  position: fixed;
+  width: 100vw; height: 100vh;
+  top: 0; left: 0; pointer-events: none;
+  z-index: 0;
+}
+.stars::before, .stars::after {
+  content: '';
+  position: absolute;
+  top:0; left:0; width: 100%; height: 100%;
+  background-repeat: repeat;
+  background-image: radial-gradient(#4f8cffbb 1.2px, transparent 1.6px),
+                    radial-gradient(#fff6 1px, transparent 1.6px);
+  background-size: 110px 110px, 195px 195px;
+  opacity: 0.10;
+  animation: starshift 22s linear infinite;
+}
+.stars::after {
+  background-image: radial-gradient(#5fd4fa 1.1px, transparent 1.4px),
+                    radial-gradient(#fff6 1px, transparent 1.2px);
+  background-size: 120px 120px, 190px 190px;
+  opacity: .12;
+  animation: starshift2 44s linear infinite reverse;
+}
+@keyframes starshift {
+  to {transform: translateY(-18px);}
+}
+@keyframes starshift2 {
+  to {transform: translateY(-60px);}
+}
+.services-tabs-wrap {
+  max-width: 950px;
+  margin: 64px auto;
+  background: rgba(24,35,58,0.98); /* deep blue, nearly opaque */
+  border-radius: 30px;
+  box-shadow: 0 10px 50px #11234b9a, 0 2px 18px #1953aa38;
+  padding: 50px 46px 42px 46px;
+  border: 2.2px solid #385ada66;
+  backdrop-filter: blur(6px);
+}
+.section-number {
+  display: inline-block;
+  background: linear-gradient(85deg, #4f8cff, #28f8fa 90%);
+  color: #fff;
+  border-radius: 7px;
+  font-size: 1.18em;
+  font-weight: bold;
+  padding: 0px 14px 0 10px;
+  margin-right: 12px;
+  letter-spacing: 1.3px;
+  font-family: inherit;
+  box-shadow: 0 2px 8px #1851ff48;
+}
+/* Tabs Bar */
+.services-tabs {
+  background: #243761;
+  border-radius: 12px 12px 0 0;
+  border-bottom: 2.5px solid #345;
+  position: relative;
+  margin-bottom: 32px;
+  overflow-x: auto;
+}
+
+/* Tab Buttons */
+.service-tab-btn {
+  background: none;
+  border: none;
+  color: #6ad6ff;
+  padding: 15px 27px 12px 27px;
+  cursor: pointer;
+  font-size: 1.08em;
+  font-weight: bold;
+  border-radius: 12px 12px 0 0;
+  margin-right: 3px;
+  letter-spacing: .02em;
+  transition: background .19s, color .18s, font-size .11s, box-shadow .18s;
+  z-index: 2;
+  position: relative;
+}
+.service-tab-btn:hover,
+.service-tab-btn.active {
+  background: linear-gradient(87deg, #225ad2 0%, #3159af 80%);
+  color: #fff;
+  box-shadow: 0 4px 16px #4f8cff29;
+  font-size: 1.12em;
+}
+
+/* Tab Underline */
+#tab-underline {
+  background: linear-gradient(90deg,#4f8cff 40%, #28f8fa 95%);
+  height: 4px;
+  border-radius: 3px 3px 0 0;
+  transition: all 0.3s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+/* Detail Card */
+#service-details {
+  min-height: 235px;
+  margin-top: 0;
+}
+.service-detail {
+  background: linear-gradient(100deg, #1e2758 60%, #253660 100%);
+  color: #e9f7ff;
+  border-radius: 18px;
+  box-shadow: 0 8px 28px #101f3d42;
+  padding: 38px 34px 20px 38px;
+  margin-bottom: 9px;
+  position: relative;
+  display: none;
+  opacity: 0;
+  transform: translateY(30px) scale(0.97);
+  animation-fill-mode: both;
+}
+.service-detail.animate-in {
+  display: block !important;
+  animation: fadeInCard 0.55s cubic-bezier(.65,1.6,.21,.96);
+  opacity: 1;
+}
+.service-detail.animate-out {
+  animation: fadeOutCard .45s cubic-bezier(.67,.12,.36,1);
+  opacity: 0;
+}
+@keyframes fadeInCard {
+  0%   { opacity: 0; transform: translateY(30px) scale(0.97);}
+  68%  {opacity:0.99; transform: translateY(-9px) scale(1.03);}
+  100% { opacity: 1; transform: translateY(0) scale(1.02);}
+}
+@keyframes fadeOutCard {
+  0%   { opacity: 1; transform: translateY(0) scale(1.02);}
+  100% { opacity: 0; transform: translateY(30px) scale(0.98);}
+}
+
+/* Card Headings, lists, tools -- light/brighter for contrast */
+.service-detail h4 {
+  color: #7fbcff;
+  font-size: 1.33em;
+  font-weight: 700;
+  margin: 0 0 18px 0;
+  letter-spacing: .04em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.service-detail ul {
+  color: #c2eeff;
+  text-align: left;
+  margin: 0 0 0 18px;
+  padding-left: 0;
+  font-size: 1.04em;
+  font-weight: 500;
+  line-height: 1.7;
+  letter-spacing: .01em;
+}
+.tools {
+  margin-top: 17px;
+  font-size: 1.11em;
+  color: #1eecff;
+  background: #13274e;
+  display: inline-block;
+  border-radius: 7px;
+  padding: 4px 13px 4px 10px;
+  font-weight: 700;
+  letter-spacing: .01em;
+}
+
+/* Responsive rules - keep contrast, no overflow! */
+@media (max-width:1050px) {
+  .services-tabs-wrap { padding: 30px 7vw; }
+}
+@media (max-width:700px) {
+  .services-tabs-wrap { padding: 12px 2vw 14px 2vw; }
+  .major h2 { font-size: 1.16rem; }
+  .service-detail {padding: 17px 3vw 8px 3vw;}
+  .service-detail h4 {font-size:1em;}
+  .service-tab-btn {padding:10px 7px;font-size:1em;}
+}
+@media (max-width:460px) {
+  .services-tabs-wrap { padding: 2vw 1vw; }
+  .service-detail { padding: 7px 1vw 6px 2vw; }
+}
+
+
+</style>	
+</head>
+<body>
+	<div class="stars"></div>
+	<!-- <div class="background-blobs"></div> -->
+  <section class="services-tabs-wrap">
+    <header class="major">
+      <h2><span class="section-number">01</span> Offered Services</h2>
+    </header>
+    <div class="services-tabs" id="servicesTabs">
+      <button class="service-tab-btn active" onclick="showService(0)">🔍 Data Cleaning</button>
+      <button class="service-tab-btn" onclick="showService(1)">📊 Analysis & Reporting</button>
+      <button class="service-tab-btn" onclick="showService(2)">📈 Dashboards & KPIs</button>
+      <button class="service-tab-btn" onclick="showService(3)">📥 Excel Automation</button>
+      <button class="service-tab-btn" onclick="showService(4)">📂 DB Querying</button>
+      <button class="service-tab-btn" onclick="showService(5)">📑 Insights</button>
+      <button class="service-tab-btn" onclick="showService(6)">📎 Custom Projects</button>
+    </div>
+    <div id="service-details">
+      <div class="service-detail">
+        <h4>🔍 Data Cleaning & Preparation</h4>
+        <ul>
+          <li>Handle missing, duplicate, or incorrect data</li>
+          <li>Format and standardize datasets for analysis</li>
+          <li>Merge and transform multiple data sources</li>
+        </ul>
+        <div class="tools">🛠️ <strong>Tools:</strong> Excel, Python (Pandas), SQL, Power Query</div>
+      </div>
+      <div class="service-detail">
+        <h4>📊 Data Analysis & Reporting</h4>
+        <ul>
+          <li>Descriptive, diagnostic, predictive, and prescriptive analysis</li>
+          <li>Identify trends, patterns, and anomalies</li>
+          <li>Provide actionable insights for decision-making</li>
+        </ul>
+        <div class="tools">🛠️ <strong>Tools:</strong> Excel, Python, SQL, Power BI</div>
+      </div>
+      <div class="service-detail">
+        <h4>📈 Dashboard & KPI Design</h4>
+        <ul>
+          <li>Create interactive dashboards and reports</li>
+          <li>Track key performance indicators (KPIs)</li>
+          <li>Deliver visuals that support strategic decisions</li>
+        </ul>
+        <div class="tools">🛠️ <strong>Tools:</strong> Power BI, Excel, Tableau</div>
+      </div>
+      <div class="service-detail">
+        <h4>📥 Excel Automation & Advanced Functions</h4>
+        <ul>
+          <li>Create dynamic reports using formulas, PivotTables, slicers</li>
+          <li>Build dashboards and charts</li>
+          <li>Automate reports with macros or Power Query</li>
+        </ul>
+        <div class="tools">🛠️ <strong>Tools:</strong> Excel, Power Query, VBA</div>
+      </div>
+      <div class="service-detail">
+        <h4>📂 Database Querying (SQL)</h4>
+        <ul>
+          <li>Extract, filter, and summarize data from databases</li>
+          <li>Write complex SQL queries and joins</li>
+          <li>Optimize data extraction for performance</li>
+        </ul>
+        <div class="tools">🛠️ <strong>Tools:</strong> SQL Server, SQLite, MySQL</div>
+      </div>
+      <div class="service-detail">
+        <h4>📑 Business Insights & Recommendations</h4>
+        <ul>
+          <li>Interpret analysis results in business context</li>
+          <li>Provide summaries and suggestions to improve operations or sales</li>
+          <li>Create summary reports or presentations</li>
+        </ul>
+        <div class="tools">🛠️ <strong>Tools:</strong> PowerPoint, Word, Power BI</div>
+      </div>
+      <div class="service-detail">
+        <h4>📎 Custom Analysis Projects</h4>
+        <ul>
+          <li>Market analysis</li>
+          <li>Customer segmentation</li>
+          <li>Sales trend reports</li>
+          <li>Survey data insights</li>
+          <li>Any custom data-related task tailored to your business</li>
+        </ul>
+        <div class="tools">🛠️ <strong>Tools:</strong> Flexible – ask for details!</div>
+      </div>
+    </div>
+  </section>
+  <script>
+    function showService(idx) {
+      document.querySelectorAll('.service-detail').forEach((d,i) => {
+        if(i===idx) {
+          d.style.display = 'block';
+          d.classList.remove('animate-out');
+          d.classList.add('animate-in');
+        } else if(d.style.display !== 'none') {
+          d.classList.add('animate-out');
+          d.classList.remove('animate-in');
+          setTimeout(() => d.style.display = 'none', 450);
+        } else {
+          d.style.display = 'none';
+        }
+      });
+      document.querySelectorAll('.service-tab-btn').forEach((b,i) => {
+        b.classList.toggle('active', i===idx);
+      });
+      // Animate underline
+      const tabs = document.querySelectorAll('.service-tab-btn');
+      const underline = document.getElementById('tab-underline');
+      if (underline) {
+        const active = tabs[idx];
+        underline.style.width = active.offsetWidth + 'px';
+        underline.style.left = active.offsetLeft + 'px';
+      }
+    }
+    // Setup tab underline
+    window.addEventListener('DOMContentLoaded', () => {
+      const tabs = document.getElementById('servicesTabs');
+      let underline = document.createElement('div');
+      underline.id = 'tab-underline';
+      underline.style.position = 'absolute';
+      underline.style.bottom = '0';
+      underline.style.left = '0';
+      underline.style.height = '4px';
+      underline.style.background = 'linear-gradient(90deg,#4f8cff 40%, #28f8fa 95%)';
+      underline.style.borderRadius = '3px 3px 0 0';
+      underline.style.transition = 'all 0.3s cubic-bezier(.68,-0.55,.27,1.55)';
+      tabs.style.position = 'relative';
+      tabs.appendChild(underline);
+      setTimeout(()=>showService(0), 30); // force underline resize
+      window.addEventListener('resize',()=>showService(
+        [...document.querySelectorAll('.service-tab-btn')].findIndex(btn=>btn.classList.contains('active'))
+      ));
+    });
+    showService(0);
+  </script>
+  	<!-- <svg style="position:fixed;z-index:0;pointer-events:none;inset:0;width:100vw;height:100vh;opacity:.26;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 810" preserveAspectRatio="none"><defs><radialGradient id="m1" cx="70%" cy="60%" r="70%"><stop offset="0%" stop-color="#21ffe4"/><stop offset="100%" stop-color="#18223b"/></radialGradient></defs><rect width="100%" height="100%" fill="url(#m1)" /></svg> -->
+
+</body>
 </html>
