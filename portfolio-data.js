@@ -256,7 +256,7 @@ projects: {
         "Sales trend analysis",
         "Inventory and marketing automation"
       ],
-      link: "#",
+      link: "https://www.linkedin.com/posts/mazen-hasseb-9914122b0_food-mart-retail-activity-7355290292066865153-tNj1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAErP0_0BJp8OlByLcVIOzOi0XVx_zVj2Kak",
       accentColor: "#C75094",
       mediaCaption: "🛒 Visualizations for smarter inventory"
     },
