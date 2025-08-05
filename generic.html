@@ -184,6 +184,11 @@ body {
 @media (max-width:700px) {
   .services-tabs-wrap { padding: 12px 2vw 14px 2vw; }
   .major h2 { font-size: 1.16rem; }
+  /* Add after your existing .major h2 style */
+.major h2 {
+  color: #ffffff; /* Ensure headings have sufficient contrast */
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5); /* Improve readability */
+}
   .service-detail {padding: 17px 3vw 8px 3vw;}
   .service-detail h4 {font-size:1em;}
   .service-tab-btn {padding:10px 7px;font-size:1em;}
@@ -212,8 +217,12 @@ body {
       <button class="service-tab-btn" onclick="showService(5)">📑 Insights</button>
       <button class="service-tab-btn" onclick="showService(6)">📎 Custom Projects</button>
     </div>
-    <div id="service-details">
-      <div class="service-detail">
+<div 
+  class="service-detail" 
+  id="service-panel-${i}"
+  role="tabpanel"
+  aria-labelledby="service-tab-${i}"
+  ${i === 0 ? '' : 'hidden'}>
         <h4>🔍 Data Cleaning & Preparation</h4>
         <ul>
           <li>Handle missing, duplicate, or incorrect data</li>
@@ -332,3 +341,17 @@ body {
 
 </body>
 </html>
+<!-- .project-info p {
+  /* Attractive but simple styling */
+  background: linear-gradient(90deg, #193048 80%, #3fcde0 110%);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 1.07em;
+  font-weight: 500;
+  box-shadow: 0 2px 12px #14304c22;
+  margin: 10px auto 15px auto;
+  max-width: 98%;
+  text-align: center;
+  letter-spacing: 0.01em;
+} -->
