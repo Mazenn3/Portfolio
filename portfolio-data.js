@@ -4,7 +4,7 @@ const portfolioData = {
   about: {
     title: "About Me",
     subtitle: "Turning Data Into Decisions",
-    leadText: "I am a dedicated data analyst with a passion for transforming complex datasets into actionable business intelligence.",
+    leadText: "I'm Mazen Hasseb, a computer science student passionate about using data and technology to solve real-world problems. From AI to analytics, I’m driven by curiosity, purpose, and the belief that tech should make life better.   Always learning.  Always building.",
     mainText: [
       "Leveraging advanced tools such as Power BI, Excel, SQL, and Python, I design insightful dashboards, monitor key performance indicators, and deliver data-driven solutions that empower strategic decision-making.",
       "My experience spans rigorous training at NTI and hands-on projects through the ALX Data Program, where I consistently prioritize clarity, measurable impact, and tangible results."
@@ -237,12 +237,19 @@ projects: {
       name: "Maji Ndogo Water Analysis",
       image: "images/Maji_Ndogo.jfif",
       video: "images/Alx_1.mp4",
-      description: "Comprehensive analysis of water accessibility using modern BI tools for real-world social impact.",
-      details: [
-        "Data cleaning in Excel",
-        "Interactive Power BI dashboards",
-        "Key insights for development"
-      ],
+      role: ["Cleaned and prepared data in Excel.",
+               "Built Power BI dashboards to visualize water access and safety.",
+               "Created DAX measures for KPIs like access percentage and budget efficiency.",
+               "Identified key issues in funding, infrastructure, and gender-based risks."],
+      problem: ["Analyze water access and safety in Maji Ndogo",
+                 "Assess improvement impact",
+                 "Evaluate if budget allocation aligns with population needs."],
+      technologies: ["Power BI", "Excel", "DAX", "Power Query"],
+      learned:  ["Data cleaning and structuring",
+                   "Visual storytelling in Power BI",
+                   "Writing DAX for analysis",
+                   "Linking data insights to real-world social issues"
+                ],
       link: "https://www.linkedin.com/posts/mazen-hasseb-9914122b0_dataanalytics-powerbi-excel-activity-7313621570063589376-Hvmn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAErP0_0BJp8OlByLcVIOzOi0XVx_zVj2Kak",
       accentColor: "#05A9C7",
       mediaCaption: "🌊 Dashboard with Power BI · Impact in East Africa"
@@ -251,11 +258,21 @@ projects: {
       name: "Retail Sales Dashboard",
       image: "images/Food_Mart.jfif",
       video: "images/NTI_PowerBI.mp4",
-      description: "Interactive dashboards unveil trends and drive smarter retail decisions across regions.",
-      details: [
-        "Sales trend analysis",
-        "Inventory and marketing automation"
-      ],
+      role: ["Cleaned and transformed multi-source retail data using Power Query.",
+             "Built interactive dashboards in Power BI with custom DAX measures.",
+             "Analyzed customer segments, sales trends, and return rates.",
+             "Delivered visual insights to support strategic decisions."
+            ],
+      problem:["Food Mart needed insights into customer behavior",
+                "Product performance",
+                "and regional sales to improve profitability and reduce returns"
+              ],
+      technologies: ["Power BI", "SQL", "DAX"],
+      learned:  ["End-to-end BI process with Power BI",
+                  "Writing effective DAX for KPIs and segmentation",
+                  "Designing clean, interactive dashboards",
+                  "Turning data into clear, actionable business insights."
+                ],
       link: "https://www.linkedin.com/posts/mazen-hasseb-9914122b0_food-mart-retail-activity-7355290292066865153-tNj1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAErP0_0BJp8OlByLcVIOzOi0XVx_zVj2Kak",
       accentColor: "#C75094",
       mediaCaption: "🛒 Visualizations for smarter inventory"
@@ -264,12 +281,20 @@ projects: {
       name: "Emotion Detection System",
       image: "images/Emotion Detection.png",
       video: "images/streamlit-app1(Emotion_Detection).mp4",
-      description: "understands user text input in any language and detects emotions like Joy 😊, Anger 😠, or Fear 😨 using a fine-tuned NLP model.",
-      details: [
-        "Python & scikit-learn pipeline",
-        "Deployed with streamlit for instant results",
-        "Achieved 84% test accuracy"
-      ],
+      role: ["Developed a Python pipeline using scikit-learn for emotion detection.",
+             "Integrated multilingual support for diverse user inputs.",
+             "Deployed the model using Streamlit for real-time interaction."
+            ],
+      problem: ["Detect emotions in user text input",
+                "Support multiple languages",
+                "Provide instant feedback on emotional tone."
+              ],
+      technologies: ["Python", "scikit-learn", "Streamlit","Google Translate API","Pandas"],
+      learned:  ["Full-cycle app deployment and interactive UI design",
+                 "Hands-on experience with NLP and transformers",
+                 "Deployed a real-time web app with Streamlit",
+                 "Multilingual model handling via translation"
+                ],
       link: "https://lnkd.in/eDfFwwyf",
       accentColor: "#F29E4C",
       mediaCaption: "💡 Live app Emotion Detection with Multilingual Support"
@@ -323,9 +348,18 @@ certificates: {
 
 // Helper to wrap a section
 function renderSection(title, html) {
-  return `<section><header class='major'><h2>${title}</h2></header>${html}</section>`;
+  const titleId = `section-${title.replace(/<[^>]*>?/gm, '').replace(/[^a-z0-9]/gi, '-').toLowerCase()}`;
+  return `
+    <section aria-labelledby="${titleId}">
+      <header class='major'>
+        <h2 id="${titleId}">${title}</h2>
+      </header>
+      <div class="section-content">
+        ${html}
+      </div>
+    </section>
+  `;
 }
-
 // Main renderer
 function renderPortfolio(data) {
   let html = "";
@@ -411,54 +445,49 @@ html += renderSection(
   </div>`
 );
   
-  // Projects
-  // html += renderSection(data.projects.title, data.projects.items.map(p=>{
-	// let videoHtml = "";
-	// if (p.video && typeof p.video === "string" && p.video.endsWith('.mp4')) {
-	//   videoHtml = `<div class='centered-video'><video controls>
-	// 	<source src='${p.video}' type='video/mp4'>
-	// 	Your browser does not support the video tag.
-	//   </video></div>`;
-	// }
-	// return `<div class='project'><h3>${p.name}</h3><img src='${p.image}' alt='${p.name}' style='max-width:300px;width:100%;border-radius:8px;margin-bottom:10px'><p>${p.desc}</p>${p.details?`<ul>${p.details.map(d=>`<li>${d}</li>`).join("")}</ul>`:""}${videoHtml}</div>`;
-  // }).join("") );
-  // Projects section rendering
-// Projects section rendering
-html += renderSection(
-  `<span class="section-number">05</span> ${data.projects.title}`,
-  `<div class="projects-fancy-grid">
-    ${data.projects.items.map((project, idx) => `
-      <div class="project-fancy-card" style="${project.accentColor ? `--proj-accent:${project.accentColor}` : ''}">
-        <div class="project-badges">
-          ${(project.badges || []).map(badge => `
-            <span class="fancy-badge animated">
-              <span class="emoji-badge">${badge.emoji || ""}</span>
-              <span>${badge.label}</span>
-            </span>
-          `).join('')}
-        </div>
-        <div class="project-media-wrap" id="media-${idx}">
-          <img src="${project.image}" alt="${project.name}" class="project-image" data-for-video="${idx}">
-          <button class="show-video-btn outlined"
-                  onclick="toggleVideo(${idx}, '${project.video}','${project.image}','${project.mediaCaption ? project.mediaCaption.replace(/'/g,"&#39;") : ""}')">Show Video</button>
-        </div>
-        <div class="project-media-caption caption-animate" id="caption-${idx}">
-            ${project.mediaCaption ? `<span class="caption-text">${project.mediaCaption}</span>` : ""}
-        </div>
-        <div class="project-info">
-          <h3>${project.name}</h3>
-          <p>${project.description}</p>
-          <ul>
-            ${project.details.map(d=>`<li>${d}</li>`).join("")}
-          </ul>
-          <div class="project-actions">
-            ${project.link ? `<a href="${project.link}" class="outlined" target="_blank" rel="noopener">View Project</a>` : ""}
+  // Projects section rendering with .project-meta and .tech-tag
+  html += renderSection(
+    `<span class="section-number">05</span> ${data.projects.title}`,
+    `<div class="projects-fancy-grid">
+      ${data.projects.items.map((project, idx) => `
+        <div class="project-fancy-card" style="${project.accentColor ? `--proj-accent:${project.accentColor}` : ''}">
+          <div class="project-badges">
+            ${(project.badges || []).map(badge => `
+              <span class="fancy-badge animated">
+                <span class="emoji-badge">${badge.emoji || ""}</span>
+                <span>${badge.label}</span>
+              </span>
+            `).join('')}
+          </div>
+          <div class="project-media-wrap" id="media-${idx}">
+            <img src="${project.image}" alt="Screenshot of ${project.name} showing ${project.description ? project.description.substring(0, 70) + '...' : 'project interface'}" class="project-image">
+            <button 
+  class="show-video-btn outlined"
+  onclick="toggleVideo(${idx}, '${project.video}','${project.image}','${project.mediaCaption ? project.mediaCaption.replace(/'/g,"&#39;") : ""}')"
+  aria-label="Show video demonstration of ${project.name}"
+  tabindex="0">
+  Show Video
+</button>
+          </div>
+          <div class="project-media-caption caption-animate" id="caption-${idx}">
+              ${project.mediaCaption ? `<span class="caption-text">${project.mediaCaption}</span>` : ""}
+          </div>
+          <div class="project-info">
+            <h3>${project.name}</h3>
+            <div class="project-meta">
+              <div><b>🧑‍💻Role & Responsibilities:</b> ${Array.isArray(project.role) ? `<ul>${project.role.map(r => `<li>${r}</li>`).join('')}</ul>` : (project.role || "N/A")}</div>
+              <div><b>❓Problem Statement:</b> ${Array.isArray(project.problem) ? `<ul>${project.problem.map(p => `<li>${p}</li>`).join('')}</ul>` : (project.problem || "N/A")}</div>
+              <div><b>🛠️Tools Used:</b> ${Array.isArray(project.technologies) ? project.technologies.map(t => `<span class='tech-tag'>${t}</span>`).join(' ') : "N/A"}</div>
+              <div><b>📚What I Learned:</b> ${Array.isArray(project.learned) ? `<ul>${project.learned.map(l => `<li>${l}</li>`).join('')}</ul>` : (project.learned || "N/A")}</div>
+            </div>
+            <div class="project-actions">
+              ${project.link ? `<a href="${project.link}" class="outlined" target="_blank" rel="noopener">View Project</a>` : ""}
+            </div>
           </div>
         </div>
-      </div>
-    `).join('')}
-  </div>`
-);
+      `).join('')}
+    </div>`
+  );
 
 // Update toggleVideo to animate/reveal the caption
 window.toggleVideo = function(idx, videoUrl, posterUrl, caption) {
