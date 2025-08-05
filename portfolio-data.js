@@ -4,7 +4,7 @@ const portfolioData = {
   about: {
     title: "About Me",
     subtitle: "Turning Data Into Decisions",
-    leadText: "I'm Mazen Hasseb, a computer science student passionate about using data and technology to solve real-world problems. From AI to analytics, I’m driven by curiosity, purpose, and the belief that tech should make life better.   Always learning.  Always building.",
+    leadText: "I'm Mazen Hasseb, a computer science student from Egypt driven by curiosity and purpose. I thrive at the intersection of data, technology, and real-world problem-solving. Whether it's: Developing a Smart Flood Protection system Improving fraud detection Building dashboards that uncover hidden insights My goal is always the same: to create meaningful impact. I believe every dataset tells a story, and every line of code should move the world forward. Through: Internships Freelance projects Continuous learning I’m building the skills and mindset to become a thoughtful and impactful data professional. Let’s connect and create something valuable together.",
     mainText: [
       "Leveraging advanced tools such as Power BI, Excel, SQL, and Python, I design insightful dashboards, monitor key performance indicators, and deliver data-driven solutions that empower strategic decision-making.",
       "My experience spans rigorous training at NTI and hands-on projects through the ALX Data Program, where I consistently prioritize clarity, measurable impact, and tangible results."
@@ -240,15 +240,15 @@ projects: {
       role: ["Cleaned and prepared data in Excel.",
                "Built Power BI dashboards to visualize water access and safety.",
                "Created DAX measures for KPIs like access percentage and budget efficiency.",
-               "Identified key issues in funding, infrastructure, and gender-based risks."],
-      problem: ["Analyze water access and safety in Maji Ndogo",
-                 "Assess improvement impact",
-                 "Evaluate if budget allocation aligns with population needs."],
+               "Identified key issues in funding, infrastructure, and gender-based risks.",
+              "Analyzed gender-based crime risks linked to water collection and identified underfunded regions."
+            ],
+      problem: ["To evaluate and improve basic water access in the fictional town of Maji Ndogo, while identifying safety risks—particularly for women—during water collection. The challenge also included assessing whether budget allocation matched population needs and improvement outcomes."],
       technologies: ["Power BI", "Excel", "DAX", "Power Query"],
-      learned:  ["Data cleaning and structuring",
-                   "Visual storytelling in Power BI",
-                   "Writing DAX for analysis",
-                   "Linking data insights to real-world social issues"
+      learned:  ["Gained hands-on experience with real-world data cleaning and processing in Excel.",
+                 "Improved my ability to create dynamic Power BI reports that uncover hidden patterns.",
+                 "Enhanced proficiency in writing DAX expressions for filtering, conditional logic, and KPI calculations.",
+                 "Learned to connect data insights to real-life problems, such as infrastructure inequality and gender-based safety concerns.",
                 ],
       link: "https://www.linkedin.com/posts/mazen-hasseb-9914122b0_dataanalytics-powerbi-excel-activity-7313621570063589376-Hvmn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAErP0_0BJp8OlByLcVIOzOi0XVx_zVj2Kak",
       accentColor: "#05A9C7",
@@ -263,15 +263,22 @@ projects: {
              "Analyzed customer segments, sales trends, and return rates.",
              "Delivered visual insights to support strategic decisions."
             ],
-      problem:["Food Mart needed insights into customer behavior",
-                "Product performance",
-                "and regional sales to improve profitability and reduce returns"
+      problem:["Food Mart needed to better understand:",
+              "Customer purchasing behavior, especially the profitability of Elite vs. Regular customers",
+              "Sales and profit trends across regions, time periods, and product categories.",
+              "The impact of demographics (family size, income, etc.) on sales.",
+              "Product return patterns and the reasons behind high return rates for certain brands or regions.",
+                "The challenge was to turn raw transactional and demographic data into actionable insights that could help improve marketing, product selection, and customer engagement strategies.",
               ],
       technologies: ["Power BI", "SQL", "DAX"],
-      learned:  ["End-to-end BI process with Power BI",
-                  "Writing effective DAX for KPIs and segmentation",
-                  "Designing clean, interactive dashboards",
-                  "Turning data into clear, actionable business insights."
+      learned:  ["Gained hands-on experience in end-to-end business intelligence workflow using Power BI.",
+                 "Improved my ability to translate business questions into analytical approaches using DAX and visuals.",
+                 "Learned how to design effective, minimalist dashboards with interactivity and visual hierarchy.",
+                 "Enhanced my data storytelling skills — delivering insights that are not only correct, but also easy to interpret for stakeholders.",
+                 "Strengthened my knowledge of customer segmentation, retail KPIs, and geographical sales analysis.",
+                 "Writing effective DAX for KPIs and segmentation",
+                 "Designing clean, interactive dashboards",
+                 "Turning data into clear, actionable business insights."
                 ],
       link: "https://www.linkedin.com/posts/mazen-hasseb-9914122b0_food-mart-retail-activity-7355290292066865153-tNj1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAErP0_0BJp8OlByLcVIOzOi0XVx_zVj2Kak",
       accentColor: "#C75094",
@@ -285,15 +292,14 @@ projects: {
              "Integrated multilingual support for diverse user inputs.",
              "Deployed the model using Streamlit for real-time interaction."
             ],
-      problem: ["Detect emotions in user text input",
-                "Support multiple languages",
-                "Provide instant feedback on emotional tone."
+      problem: ["Detecting human emotions from short text inputs is challenging due to language diversity and context ambiguity. The goal was to build a system that can: Handle non-English inputs using translation Accurately classify Joy, Anger, and Fear Provide real-time, user-friendly predictions"
               ],
-      technologies: ["Python", "scikit-learn", "Streamlit","Google Translate API","Pandas"],
-      learned:  ["Full-cycle app deployment and interactive UI design",
-                 "Hands-on experience with NLP and transformers",
-                 "Deployed a real-time web app with Streamlit",
-                 "Multilingual model handling via translation"
+      technologies: ["Python", "scikit-learn", "Streamlit","Google Translate API","Pandas","HuggingFace Transformers"],
+      learned:  ["Mastered NLP preprocessing and fine-tuning transformer models",
+                 "Integrated external APIs for language translation",
+                 "Built an end-to-end interactive web app using Streamlit",
+                 "Improved skills in data visualization and user-centric UI design",
+                 "Enhanced understanding of multilingual NLP challenges",
                 ],
       link: "https://lnkd.in/eDfFwwyf",
       accentColor: "#F29E4C",
