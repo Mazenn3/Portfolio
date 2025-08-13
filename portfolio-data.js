@@ -305,20 +305,30 @@ projects: {
       accentColor: "#F29E4C",
       mediaCaption: "💡 Live app Emotion Detection with Multilingual Support"
     },
-    // {
-    //   name: "Survey Sentiment Analyzer",
-    //   image: "images/survey_sentiment.jpg",
-    //   video: "videos/survey_sentiment_demo.mp4",
-    //   description: "Analyze open-ended survey responses with NLP to reveal customer satisfaction and key themes.",
-    //   details: [
-    //     "NLP processing with Python",
-    //     "Word cloud and trend graphs",
-    //     "Deployed dashboard for real-time results"
-    //   ],
-    //   link: "#",
-    //   accentColor: "#31a24c",
-    //   mediaCaption: "📊 Real-time insights powered by NLP"
-    // }
+    {
+      name: "Urban Pulse: Divvy Bike Share Analytics Dashboard",
+      image: "images/Bikeshare Windy City.png",
+      video: "images/Urban Pulse Divvy Bike Share Analytics Dashboard.png",
+      role: ["Processed and cleaned 205,691 bike trip records using Power Query",
+             "Built comprehensive Power BI dashboard with 8 interactive visualizations",
+             "Delivered actionable recommendations for fleet optimization and station management"
+            ],
+      problem: ["Divvy Chicago needed to understand usage patterns, optimize bike distribution, and improve resource allocation across their 670-station network. With over 200,000 monthly rides, manual analysis was impossible, and stakeholders lacked real-time insights into:",
+                 "Peak usage times and locations",
+                 "Member vs. casual rider behaviors",
+                 "Station performance metrics"
+              ],
+      technologies: ["Microsoft Power BI - Interactive dashboard development","Power Query (M) - Data cleaning and transformation","DAX - Advanced calculations and measures"],
+      learned:  ["Advanced DAX formulas for time-based calculations",
+                 "Power Query optimization for large datasets (200K+ rows)",
+                 "Performance optimization for dashboard efficiency",
+                 "Understanding urban mobility patterns and user behavior",
+                 "Translating business requirements into technical solutions",
+                ],
+      link: "https://github.com/Mazenn3/Divvy-Bike-Share-Analytics-Dashboard",
+      accentColor: "#31a24c",
+      mediaCaption: "📊 Divvy Bike Share Analytics Dashboard"
+    }
   ]
 },
 certificates: {
