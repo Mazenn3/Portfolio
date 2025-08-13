@@ -307,7 +307,7 @@ projects: {
     },
     {
       name: "Urban Pulse: Divvy Bike Share Analytics Dashboard",
-      image: "images/Bikeshare Windy City.png",
+      image: "images/Bikeshare Windy City.jpg",
       video: "images/Urban Pulse Divvy Bike Share Analytics Dashboard.png",
       role: ["Processed and cleaned 205,691 bike trip records using Power Query",
              "Built comprehensive Power BI dashboard with 8 interactive visualizations",
